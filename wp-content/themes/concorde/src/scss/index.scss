@@ -11,3 +11,135 @@
 
 // Page Imports
 @import "pages/index";
+
+* {
+    font-family: "Roboto";
+    color: #333;
+}
+
+.hero-image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 458px;
+    width: 100%;
+    background-position: center;
+    position: relative;
+}
+
+.fixed-icon {
+    position: fixed;
+    top: 42px;
+    left: 11px;
+    padding: 8px 10px;
+    z-index: 100;
+    background-color: black;
+}
+
+.floating-icon {
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 50px;
+    height: 20px;
+}
+
+.main-wrapper {
+    max-width: 710px;
+    margin: 0 auto;
+    padding: 0 15px;
+    text-align: justify;
+    color: #4d4d4d;
+}
+
+.concorde-title {
+    margin-top: 60px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 50px;
+    letter-spacing: 14px;
+}
+
+.concorde-title-sub {
+    text-align: center;
+    font-size: 14px;
+    margin: 20px 0;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.concorde-title-sub span {
+    border-bottom: 1px dotted #333;
+    padding-bottom: 3px;
+}
+
+.concorde-detail {
+    margin: 60px auto 40px auto;
+    line-height: 28px;
+    text-align: center;
+    max-width: 715px;
+    font-size: 18px;
+    font-style: italic;
+}
+
+.detail-items {
+    margin-bottom: 45px;
+    line-height: 28px;
+    max-width: 725px;
+    padding-left: 30px
+}
+
+.detail-item {
+    margin-bottom: 15px;
+    font-size: 19px;
+    text-align: justify;
+    list-style-type: disc;
+    color: #4d4d4d;
+}
+
+.see-also {
+    font-size: 19px;
+    margin-bottom: 40px;
+}
+
+.section-limiter {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.chris-lamb-feature {
+    padding: 19px;
+    background-color: #f5f5f5;
+    border: 1px solid #e3e3e3;
+    border-radius: 4px;
+    max-width: 100%;
+    margin-bottom: 40px;
+}
+
+.chris-lamb-image {
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80px;
+    width: 80px;
+    border-radius: 6px;
+    margin-right: 40px;
+}
+
+.feature-box-text {
+    display: inline-block;
+    max-width: calc(100% - 125px);
+    vertical-align: top;
+    margin-top: 7px;
+    line-height: 24px;
+    font-size: 16px;
+}
+
+.tags {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.tags:nth-last-child(3){
+    margin-bottom: 40px;
+}

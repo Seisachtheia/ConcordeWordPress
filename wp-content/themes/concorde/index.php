@@ -6,8 +6,8 @@
 
 	<body <?php body_class(); ?>>
 
-		<?php include('partials/header.php'); ?>
-		<?php include('partials/mobile-menu.php'); ?>
+		<!--<?php include('partials/header.php'); ?>-->
+		<!--<?php include('partials/mobile-menu.php'); ?>-->
 
 		<main class="_page _page-template">
 
