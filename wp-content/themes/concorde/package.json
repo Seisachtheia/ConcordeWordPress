@@ -1,14 +1,22 @@
 {
-  "name": "vue-starter",
+  "name": "brightbird-base",
   "version": "1.0.0",
   "description": "",
-  "main": "index.html",
+  "main": "bundle.js",
   "scripts": {
-    "start": "webpack-dev-server --progress --colors",
+    "start": "webpack --progress --colors --watch",
     "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alshdavid/WordPress-Theme.git"
   },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alshdavid/WordPress-Theme/issues"
+  },
+  "homepage": "https://github.com/alshdavid/WordPress-Theme#readme",
   "devDependencies": {
     "babel-core": "^6.24.1",
     "babel-loader": "^6.4.1",
@@ -20,7 +28,6 @@
     "precss": "^1.4.0",
     "sass-loader": "^6.0.3",
     "style-loader": "^0.16.1",
-    "webpack": "^2.4.1",
-    "webpack-dev-server": "^2.4.2"
+    "webpack": "^2.4.1"
   }
 }

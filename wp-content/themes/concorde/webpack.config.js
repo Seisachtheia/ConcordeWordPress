@@ -1,27 +1,15 @@
 const path = require('path');
-const port = 8080
-const host = "0.0.0.0"
 
 module.exports = {
-    devServer: {
-        publicPath: "/",
-        contentBase: "./public",
-        port: port,
-        host: host
-    },
     entry: [
-        "webpack-dev-server/client?http://localhost:" + port,
-        "./public/scripts/scripts.js",
-        "./public/styles/styles.scss"
+        "./src/js/index.js",
+        "./src/scss/index.scss"
     ],
     output: {
-        path: path.join(__dirname, 'public'),
+        path: path.join(__dirname, ''),
         filename: "bundle.js"
     },
     module: {
-        // loaders: [
-        //     { test: /\.js$/, exclude: /node_modules/, loader: "babel-loader" }
-        // ],
         rules: [
              {
                 test: /\.js$/,
@@ -36,13 +24,13 @@ module.exports = {
             {
                 test: /\.scss$/,
                 use: [{
-                    loader: "style-loader" // creates style nodes from JS strings
+                    loader: "style-loader"
                 }, {
-                    loader: "css-loader" // translates CSS into CommonJS
+                    loader: "css-loader"
                 }, {
-                    loader: "postcss-loader" // compiles Sass to CSS
+                    loader: "postcss-loader"
                 }, {
-                    loader: "sass-loader" // compiles Sass to CSS
+                    loader: "sass-loader"
                 }]
             }
         ]
